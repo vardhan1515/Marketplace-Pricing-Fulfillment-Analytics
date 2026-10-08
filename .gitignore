@@ -1,0 +1,33 @@
+# Raw and generated data
+data/raw/*
+data/processed/*
+data/exports/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/exports/.gitkeep
+!data/README.md
+
+# Generated models and reports
+models/*
+outputs/*
+!models/.gitkeep
+!outputs/.gitkeep
+
+# Power BI working files and local caches
+powerbi/*.pbix
+powerbi/*.pbit
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Environment and editor files
+.env
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
