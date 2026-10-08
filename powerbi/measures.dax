@@ -1,0 +1,16 @@
+Orders = DISTINCTCOUNT(risk_ranked_orders[order_id])
+
+Net Sales = SUM(risk_ranked_orders[net_sales])
+
+Profit = SUM(risk_ranked_orders[profit])
+
+Weighted Margin = DIVIDE([Profit], [Net Sales])
+
+Late Orders = SUM(risk_ranked_orders[calculated_late_flag])
+
+Late Rate = DIVIDE([Late Orders], [Orders])
+
+Average Predicted Late Risk = AVERAGE(risk_ranked_orders[predicted_late_risk])
+
+Profit Exposure = SUM(risk_ranked_orders[profit_exposure])
+
